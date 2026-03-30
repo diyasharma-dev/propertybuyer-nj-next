@@ -9,15 +9,15 @@ import { useState } from "react";
 const fadeIn = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 
 const steps = [
-  { icon: Phone, step: "Step 1", title: "Complete Our Quick Online Form", desc: "Start by sharing basic details about your property in our easy, no-obligation form. It takes just minutes, and there's no commitment required!" },
+  { icon: Phone, step: "Step 1", title: "Complete Our Quick Online Form", desc: "Start by sharing basic details about your property in our easy, no-obligation form. It takes just minutes, and there’s no commitment required!" },
   { icon: DollarSign, step: "Step 2", title: "Get a Competitive Cash Offer (Within 24 Hours!)", desc: "Our pre-vetted cash buyers will review your details and send you a no-pressure, all-cash offer—often in 24 hours or less. No hidden fees, no surprises!" },
   { icon: CheckCircle, step: "Step 3", title: "Close on Your Timeline (Fast & Flexible!)", desc: "Choose a closing date that works for you—some sellers close in as little as 7 days! Get your cash in hand and move forward without the delays." },
 ];
 
 const whyUs = [
-  { icon: Shield, title: "Highly Vetted Buyers", desc: "Property Buyer NJ vets every buyer to cut through the noise and escort you to the professionals." },
-  { icon: Zap, title: "Lightning Quick Response", desc: "Once you fill out our form, it takes less than 3 seconds for the best fitting cash buyer in your neighborhood to receive your details." },
-  { icon: Heart, title: "People Over Profit", desc: "Having to leave your home is a major life event. This entire platform exists to help you navigate this challenging time." },
+  { icon: Shield, title: "Highly Vetted Buyers", desc: "A lot of people can offer cash for your home... few will follow through on it. Property Buy NJ vets every buyer to cut through the noise and escort you to the professionals." },
+  { icon: Zap, title: "Lightning Quick Response", desc: "Once you fill out our form, it takes less than 3 seconds for the best fitting cash buyer in your neighborhood to receive your details and start crafting your offer" },
+  { icon: Heart, title: "People Over Profit", desc: "Having to leave your home is a major life event. This entire platform exists to help you navigate this challenging time, and step into the stress-free future that you deserve." },
 ];
 
 const faqs = [
@@ -34,9 +34,10 @@ export default function HowItWorksPage() {
       <section className="gradient-navy section-padding">
         <div className="container-max text-center">
           <motion.div initial="hidden" animate="visible" variants={fadeIn}>
-            <h1 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-4">How It Works</h1>
+            <h1 className="font-heading text-4xl md:text-5xl font-bold text-primary-foreground mb-4">Sell Your Home in 3 Easy Steps
+</h1>
             <p className="text-primary-foreground/70 font-body text-lg max-w-2xl mx-auto">
-              Sell your home in 3 easy steps. Selling your home for cash has never been easier!
+              Selling your home for cash has never been easier! Follow these simple steps to get started and receive a generous, all-cash offer for your property.
             </p>
           </motion.div>
         </div>
@@ -74,6 +75,9 @@ export default function HowItWorksPage() {
         <div className="container-max">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">Why Use Property Buyer NJ?</h2>
+            <br/>
+            <p>Why Use Property Buyer NJ?<br/>
+Here’s why using the PBNJ platform is your best option to sell your house and get paid quickly.</p>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-8">
             {whyUs.map((w, i) => (
@@ -109,6 +113,56 @@ export default function HowItWorksPage() {
       </section>
 
       <section className="section-padding bg-cream">
+        <div className="container-max">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="text-center mb-12">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">Our Process</h2>
+          </motion.div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: (
+                  <svg viewBox="0 0 64 64" className="w-12 h-12 text-accent" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M32 8L8 28h6v24h36V28h6L32 8z" /><path d="M24 52V36h16v16" /><circle cx="32" cy="28" r="4" />
+                  </svg>
+                ),
+                step: "Step 1",
+                desc: "Share basic info about your home in under 2 minutes. We'll analyze your property and market conditions immediately and get a preliminary estimate of your home's cash value.",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 64 64" className="w-12 h-12 text-accent" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="32" cy="32" r="22" /><path d="M32 18v4M32 42v4M22 32h4M38 32h4" /><path d="M32 22v10l6 4" />
+                  </svg>
+                ),
+                step: "Step 2",
+                desc: "Get a fair, no-obligation cash offer within 24 hours. Our offer includes all costs — no hidden fees or commissions. Compare our offer with traditional sale options.",
+              },
+              {
+                icon: (
+                  <svg viewBox="0 0 64 64" className="w-12 h-12 text-accent" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20 36c0 0 4-6 12-6s12 6 12 6" /><path d="M16 44l6-6 6 6 6-6 6 6" /><path d="M8 32c0-13.3 10.7-24 24-24s24 10.7 24 24-10.7 24-24 24S8 45.3 8 32z" />
+                  </svg>
+                ),
+                step: "Step 3",
+                desc: "Choose your ideal closing date (as fast as 7 days). We handle all paperwork and legal requirements. Walk away with cash in hand — no delays or complications.",
+              },
+            ].map((item, i) => (
+              <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} transition={{ delay: i * 0.1 }}
+                className="bg-card border rounded-2xl p-8 text-center hover:shadow-lg transition-shadow flex flex-col items-center">
+                <div className="relative mb-6">
+                  <div className="w-24 h-24 rounded-full bg-accent/10 flex items-center justify-center">
+                    {item.icon}
+                  </div>
+                </div>
+                <h3 className="font-heading text-xl font-bold text-foreground mb-3">{item.step}</h3>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-background">
         <div className="container-max">
           <FormWithOwner />
         </div>

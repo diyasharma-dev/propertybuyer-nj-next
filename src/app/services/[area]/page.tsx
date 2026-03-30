@@ -101,6 +101,7 @@ export default function ServiceAreaPage({ params }: { params: Promise<{ area: st
         </div>
       </section>
 
+      {/* Why sell to us */}
       <section className="section-padding bg-background">
         <div className="container-max">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

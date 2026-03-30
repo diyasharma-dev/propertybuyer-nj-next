@@ -22,7 +22,10 @@ export default function CashOfferForm({ variant = "light" }: CashOfferFormProps)
 
   return (
     <form onSubmit={handleSubmit} className={`rounded-2xl p-6 md:p-8 space-y-4 ${isDark ? "gradient-navy" : "bg-card shadow-xl border"}`}>
-      <h3 className={`font-heading text-xl font-bold ${isDark ? "text-primary-foreground" : "text-foreground"}`}>Get Your Fair Cash Offer</h3>
+      <h2 className={`font-heading text-xl font-bold ${isDark ? "text-primary-foreground" : "text-foreground"}`}>Ready to Sell Your Home Fast?
+</h2>
+<p className={`text-sm font-body ${isDark ? "text-primary-foreground/80" : "text-muted-foreground"}`}>Just fill out the form below and we will connect you with a hand-picked investor.</p>
+
       <Input placeholder="Property Address" required className="font-body" />
       <Input placeholder="Full Name" required className="font-body" />
       <div className="grid grid-cols-2 gap-3">

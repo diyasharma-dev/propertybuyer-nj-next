@@ -23,9 +23,9 @@ const features = [
 ];
 
 const steps = [
-  { icon: Phone, title: "Contact Us", desc: "Call us or complete the form — we'll have a quick 5-10 minute conversation. Within 24 hours we provide a ballpark cash offer." },
-  { icon: DollarSign, title: "Get Your Offer", desc: "We visit the property. Within 1 hour we solidify our offer and send you a contract. We handle all the nuances of selling." },
-  { icon: CheckCircle, title: "Get Paid", desc: "Title is cleared, we schedule a close date, and you get paid in as little as 7-10 business days! Move out on your schedule." },
+  { icon: Phone, title: "Contact Us", desc: "Call us or complete the form — you and our office manager will then have a quick 5-10 minute conversation to see if we are the right fit for your real estate needs. Then within 24 hours we will provide a ballpark range cash offer. If you are in agreement we then schedule an appointment." },
+  { icon: DollarSign, title: "Get Your Offer", desc: "We go to the appointment. Within 1 hour of the appointment we will solidify our offer and send you a contract for your house. We sign a contract and we start the escrow process. At this Point we HAVE A DEAL. Then we take care of all the nuances of selling a house" },
+  { icon: CheckCircle, title: "Get Paid", desc: "THEN HAPPY DAYS 😉 Title is cleared and we schedule a close date. We then close on escrow and you get paid in as little as 7-10 business days! You move out on your schedule, and just like that your home is sold! For more details, check out our HOW IT WORKS page." },
 ];
 
 const areas = ["Nutley", "Belleville", "Bloomfield", "Cedar Grove", "Caldwell", "Verona", "Newark", "Millville"];
@@ -71,7 +71,7 @@ export default function IndexPage() {
                   </Button>
                 </a>
                 <Link href="/how-it-works">
-                  <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-body">
+                  <Button size="lg" variant="outline" className="border-primary-foreground/30 text-black-foreground hover:bg-primary-foreground/10 font-body">
                     How It Works <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
@@ -179,7 +179,7 @@ export default function IndexPage() {
               <Image src={sellImg} alt="Happy homeowners" className="rounded-2xl shadow-xl" loading="lazy" width={1280} height={854} />
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
-              <span className="text-accent font-body font-semibold text-sm uppercase tracking-wider">We Buy All Types</span>
+              <span className="text-accent font-body font-semibold text-sm uppercase tracking-wider">Ready to sell your house</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
                 What Kinds of Properties Do We Buy?
               </h2>
@@ -262,7 +262,7 @@ export default function IndexPage() {
                 </Button>
               </a>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-body text-lg px-10 py-7">
+                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-black-foreground hover:bg-primary-foreground/10 font-body text-lg px-10 py-7">
                   Contact Us Online
                 </Button>
               </Link>

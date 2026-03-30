@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Home, DollarSign, Handshake, TrendingUp } from "lucide-react";
 import Image from "next/image";
 import communityImg from "@/assets/community.jpg";
+import affordImg from "@/assets/afford.jpg";
 
 const fadeIn = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 
@@ -59,7 +60,7 @@ export default function CommunityInvestorsPage() {
         viewport={{ once: true }}
       >
         <Image
-          src={communityImg}
+          src={affordImg}
           alt="Community youth program"
           className="rounded-2xl shadow-xl"
           loading="lazy"

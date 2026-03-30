@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import aboutImg from "@/assets/about-house.jpg";
 import sellImg from "@/assets/sell-house.jpg";
+import commentImg from "@/assets/comment.jpg";
 import type { Metadata } from "next";
 
 const fadeIn = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
@@ -55,7 +56,9 @@ export default function AboutPage() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
             <h2 className="font-heading text-3xl font-bold text-foreground mb-4">What Kinds of Properties Do We Buy?</h2>
             <p className="text-muted-foreground font-body mb-10 max-w-xl mx-auto">
-              Even if you think your home is unsellable, we will get you an offer for it.
+              Maybe your home has significant damage, is in an undesirable location, or the materials are out of date.
+
+Even if you think your home is unsellable, we will get you an offer for it. You can’t beat the speed of our offer through a traditional sale.
             </p>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
@@ -78,11 +81,31 @@ export default function AboutPage() {
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
               <h2 className="font-heading text-3xl font-bold text-foreground mb-6">What Sets Property Buyer NJ Apart?</h2>
               <p className="text-muted-foreground font-body leading-relaxed mb-4">
-                Our mission is straightforward: to ensure that buying or selling your New Jersey house is as hassle-free and efficient as possible. Whether you're facing foreclosure, bankruptcy, or simply need a fast sale, we purchase houses directly, eliminating the need for managers, inspectors, and hidden fees.
+               Our mission is straightforward: to ensure that buying or selling your New Jersey house is as hassle-free and efficient as possible.” Whether you’re facing a mortgage or have yet to make a house payment, foreclosure, or bankruptcy, we understand that selling a house can be daunting. Here’s where we step in: rather than acting as mere intermediaries, we purchase houses directly from individuals facing challenges such as mortgage arrears, foreclosure, or bankruptcy, providing a solution when the bank reclaims the property.” Once we purchase the home, the house sale is our target. Propertybuyernj.com offers a unique service that eliminates the need for managers, inspectors, and hidden fees
               </p>
               <p className="text-muted-foreground font-body leading-relaxed">
-                We buy houses as is, reducing the hassle of repairs and saving time and money. Our qualified experts will collaborate with you one-on-one to fully grasp your needs before offering a tailored solution.
+                “We buy houses as is, reducing the hassle of repairs and saving time and money.” Our qualified experts will collaborate with you one-on-one to fully grasp your needs before offering a tailored solution to assist you in achieving your goals.
               </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-background">
+        <div className="container-max">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
+              <h2 className="font-heading text-3xl font-bold text-foreground mb-6">Property Buyer NJ – Location In The New Jersey Area
+</h2>
+              <p className="text-muted-foreground font-body mb-4 leading-relaxed">
+              Our goal is simple: To remove the headaches from buying or selling your home in New Jersey. Whether you’re dealing with mortgage challenges, foreclosure, bankruptcy, or simply need a fast and fair sale, we’re here to help. No pressure, no complications—just a straightforward solution designed for your situation. Here’s where we step in: rather than acting as mere intermediaries, we purchase houses directly from individuals facing challenges such as mortgage arrears, foreclosure, or bankruptcy, providing a solution when the bank reclaims the property.
+              </p>
+              <p className="text-muted-foreground font-body mb-4 leading-relaxed">
+                Once we purchase the home, the house sale is our target. Propertybuyernj.com offers a unique service that eliminates the need for managers, inspectors, and hidden fees. “We buy houses as is, reducing the hassle of repairs and saving time and money.” Our qualified experts will collaborate with you one-on-one to fully grasp your needs before offering a tailored solution to assist you in achieving your goals.
+              </p>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+              <Image src={commentImg} alt="Community youth program" className="rounded-2xl shadow-xl" loading="lazy" width={1280} height={854} />
             </motion.div>
           </div>
         </div>

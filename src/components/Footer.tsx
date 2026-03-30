@@ -78,10 +78,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-accent transition-colors"><Facebook className="w-5 h-5" /></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-accent transition-colors"><Instagram className="w-5 h-5" /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-accent transition-colors"><Linkedin className="w-5 h-5" /></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-accent transition-colors"><Youtube className="w-5 h-5" /></a>
+            <a href="https://www.facebook.com/propertybuyernj" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Facebook className="w-4 h-4" /></a>
+                         <a href="https://www.instagram.com/propertybuyernj/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Instagram className="w-4 h-4" /></a>
+                         <a href="https://www.linkedin.com/company/property-buyer-nj/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Linkedin className="w-4 h-4" /></a>
+                         <a href="https://www.youtube.com/@propertybuyernj" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Youtube className="w-4 h-4" /></a>
           </div>
         </div>
       </div>

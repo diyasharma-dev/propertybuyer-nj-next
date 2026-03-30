@@ -50,10 +50,10 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-3">
             <div className="hidden sm:flex items-center gap-2 text-primary-foreground/90">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Facebook className="w-4 h-4" /></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Instagram className="w-4 h-4" /></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Linkedin className="w-4 h-4" /></a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Youtube className="w-4 h-4" /></a>
+              <a href="https://www.facebook.com/propertybuyernj" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Facebook className="w-4 h-4" /></a>
+              <a href="https://www.instagram.com/propertybuyernj/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Instagram className="w-4 h-4" /></a>
+              <a href="https://www.linkedin.com/company/property-buyer-nj/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Linkedin className="w-4 h-4" /></a>
+              <a href="https://www.youtube.com/@propertybuyernj" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><Youtube className="w-4 h-4" /></a>
             </div>
             <Link href="/contact">
               <Button size="sm" className="bg-accent text-accent-foreground hover:bg-orange-dark text-xs font-semibold font-body">
@@ -86,9 +86,9 @@ export default function Header() {
             ))}
             {/* Services dropdown */}
             <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-              <button className="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium font-body text-foreground hover:text-accent transition-colors">
+              <Link href="/areas-served" className="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium font-body text-foreground hover:text-accent transition-colors">
                 Areas Served <ChevronDown className="w-4 h-4" />
-              </button>
+              </Link>
               {servicesOpen && (
                 <div className="absolute top-full left-0 mt-1 w-48 bg-card rounded-lg shadow-xl border py-2 z-50">
                   {services.map(s => (
@@ -121,9 +121,11 @@ export default function Header() {
               </Link>
             ))}
             <div className="border-t pt-2 mt-2">
-              <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2 font-body">Areas Served</p>
+              <Link href="/areas-served" onClick={() => setMobileOpen(false)} className="block py-2 text-sm font-body font-semibold text-foreground hover:text-accent">
+                Areas Served
+              </Link>
               {services.map(s => (
-                <Link key={s.href} href={s.href} onClick={() => setMobileOpen(false)} className="block py-1.5 text-sm font-body text-foreground hover:text-accent">
+                <Link key={s.href} href={s.href} onClick={() => setMobileOpen(false)} className="block py-1.5 pl-3 text-sm font-body text-foreground hover:text-accent">
                   {s.name}
                 </Link>
               ))}

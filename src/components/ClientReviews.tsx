@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 const reviews = [
-  { name: "Maria S.", location: "Nutley, NJ", text: "Property Buyer NJ made selling our home so easy. We got a fair cash offer within 24 hours and closed in just 10 days. Highly recommend!", rating: 5 },
-  { name: "James T.", location: "Belleville, NJ", text: "I was facing foreclosure and didn't know what to do. The team at PBNJ stepped in, handled everything, and saved my credit. Forever grateful.", rating: 5 },
-  { name: "Linda K.", location: "Bloomfield, NJ", text: "No repairs, no fees, no stress — they delivered exactly what they promised. The whole process was transparent and professional.", rating: 5 },
-  { name: "Robert M.", location: "Newark, NJ", text: "I inherited a property I couldn't maintain. PBNJ gave me a great offer and closed on my timeline. Couldn't be happier with the experience.", rating: 5 },
+  { name: "Jackie Merizalde.", location: "Nutley, NJ", text: "Very experienced and professional.If you are looking for a seamless , trustworthy transaction for your home sale . This is the way to go .", rating: 5 },
+  { name: "Enrique Bernal.", location: "Belleville, NJ", text: "Javier is very easy to work with. Super professional and knowledgeable in the field.", rating: 5 },
+  { name: "Kike Gonzalez.", location: "Bloomfield, NJ", text: "Very good is the best buyer In NEW JERSEY", rating: 5 },
+  { name: "Jayne Adamsky.", location: "Newark, NJ", text: "My experience with Property Buyer NJ was very positive. He was timely, cooperative and always helpful. I would t hesitate to recommend Javier.", rating: 5 },
   { name: "Angela D.", location: "Caldwell, NJ", text: "From the first phone call to closing day, the team was incredibly supportive. They truly put people over profit.", rating: 5 },
   { name: "Carlos P.", location: "Verona, NJ", text: "Sold my rental property in under two weeks. The cash offer was fair and the process was seamless. Will definitely work with them again.", rating: 4 },
 ];
