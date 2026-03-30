@@ -7,21 +7,32 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import FormWithOwner from "@/components/FormWithOwner";
 import areaNutley from "@/assets/area-nutley.jpg";
-import areaBelleville from "@/assets/area-belleville.jpg";
+import Belleville from "@/assets/Belleville.png";
 import areaBloomfield from "@/assets/area-bloomfield.jpg";
 import areaGeneral from "@/assets/area-general.jpg";
+import condos from "@/assets/condos.png";
+import homes from "@/assets/homes.jpeg";
+import rentals from "@/assets/rentals.png";
+import townhomes from "@/assets/townhomes.jpeg";
+import verona from "@/assets/verona.png";
 
 const fadeIn = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 
 const areas = [
   { slug: "nutley",      name: "Nutley",      county: "Essex County",      tagline: "A Charming Suburb with NYC Convenience",       image: areaNutley },
-  { slug: "belleville",  name: "Belleville",  county: "Essex County",      tagline: "Affordable Living with Urban Accessibility",    image: areaBelleville },
+
+  { slug: "belleville",  name: "Belleville",  county: "Essex County",      tagline: "Affordable Living with Urban Accessibility",    image: Belleville },
+
   { slug: "bloomfield",  name: "Bloomfield",  county: "Essex County",      tagline: "Historic Charm Meets Modern Living",            image: areaBloomfield },
-  { slug: "cedar-grove", name: "Cedar Grove", county: "Essex County",      tagline: "Peaceful Suburban Living at Its Finest",        image: areaGeneral },
-  { slug: "caldwell",    name: "Caldwell",    county: "Essex County",      tagline: "Small-Town Feel with Big-City Access",          image: areaGeneral },
-  { slug: "verona",      name: "Verona",      county: "Essex County",      tagline: "Scenic Borough with a Welcoming Community",     image: areaGeneral },
-  { slug: "newark",      name: "Newark",      county: "Essex County",      tagline: "NJ's Largest City, Full of Opportunity",        image: areaGeneral },
-  { slug: "millville",   name: "Millville",   county: "Cumberland County", tagline: "Affordable Living in Southern New Jersey",      image: areaGeneral },
+
+  { slug: "cedar-grove", name: "Cedar Grove", county: "Essex County",      tagline: "Peaceful Suburban Living at Its Finest",        image: townhomes},
+
+  { slug: "caldwell",    name: "Caldwell",    county: "Essex County",      tagline: "Small-Town Feel with Big-City Access",          image: verona },
+  { slug: "verona",      name: "Verona",      county: "Essex County",      tagline: "Scenic Borough with a Welcoming Community",     image: rentals },
+
+  { slug: "newark",      name: "Newark",      county: "Essex County",      tagline: "NJ's Largest City, Full of Opportunity",        image: homes },
+
+  { slug: "millville",   name: "Millville",   county: "Cumberland County", tagline: "Affordable Living in Southern New Jersey",      image: condos },
 ];
 
 export default function AreasServedPage() {
