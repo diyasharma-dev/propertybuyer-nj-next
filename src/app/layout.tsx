@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   title: "Property Buyer NJ – Sell Your House Fast for Cash",
   description:
     "Sell your New Jersey home fast for cash. No repairs, no fees, no stress. Get a fair cash offer within 24 hours.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

@@ -24,6 +24,7 @@ const navLinks = [
   { name: "About", href: "/about" },
   { name: "How It Works", href: "/how-it-works" },
   { name: "Community Investors", href: "/community-investors" },
+  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
