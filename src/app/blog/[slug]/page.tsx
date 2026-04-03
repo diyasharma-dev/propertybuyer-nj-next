@@ -1,5 +1,6 @@
 "use client";
 
+import { use } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -310,11 +311,12 @@ function renderContent(content: string) {
   });
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = posts[params.slug];
+export default function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params);
+  const post = posts[slug];
   if (!post) notFound();
 
-  const related = (relatedSlugs[params.slug] || []).map((s) => ({ slug: s, ...posts[s] }));
+  const related = (relatedSlugs[slug] || []).map((s) => ({ slug: s, ...posts[s] }));
 
   return (
     <>
