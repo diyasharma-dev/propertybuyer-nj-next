@@ -15,19 +15,19 @@ import homesImg from "@/assets/homes.jpeg";
 import areaImg from "@/assets/area-general.jpg";
 import areaBloomfieldImg from "@/assets/area-bloomfield.jpg";
 import areaNutleyImg from "@/assets/area-nutley.jpg";
-import areaBellevilleImg from "@/assets/area-belleville.jpg";
+import affordabilityImg from "@/assets/affordability.jpg";
 import condosImg from "@/assets/condos.png";
 import rentalsImg from "@/assets/rentals.png";
 import townhomesImg from "@/assets/townhomes.jpeg";
 import heroImg from "@/assets/hero-house.jpg";
-import ownerImg from "@/assets/owner.png";
+import sellhomeImg from "@/assets/sellhome.jpg";
 import commentImg from "@/assets/comment.jpg";
 
 const fadeIn = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 
 const imageMap: Record<string, typeof sellImg> = {
   "sell-house-fast-nutley-nj-2025": areaNutleyImg,
-  "we-buy-houses-belleville-nj-2025": areaBellevilleImg,
+  "we-buy-houses-belleville-nj-2025": affordabilityImg,
   "selling-house-as-is-bloomfield-nj-2025": areaBloomfieldImg,
   "avoid-foreclosure-clifton-nj-2025": homesImg,
   "sell-inherited-home-essex-county-nj": aboutImg,
@@ -39,18 +39,18 @@ const imageMap: Record<string, typeof sellImg> = {
   "cash-house-buyers-cumberland-county-nj": townhomesImg,
   "montclair-cash-home-buyers-2025": condosImg,
   "sell-house-fast-rutherford-nj-2025": rentalsImg,
-  "nj-homeowners-hidden-tax-trap-2025": ownerImg,
+  "nj-homeowners-hidden-tax-trap-2025": sellhomeImg,
   "top-cash-home-buyers-new-jersey-2025": commentImg,
   "sell-house-fast-nutley-cash-buyer": areaNutleyImg,
   "sell-house-as-is-jersey-city-nj": heroImg,
   "we-buy-houses-paramus-nj": areaImg,
   "avoid-foreclosure-jefferson-nj": homesImg,
   "sell-house-as-is-west-milford-nj": areaBloomfieldImg,
-  "verona-nj-cash-home-buyers": areaBellevilleImg,
+  "verona-nj-cash-home-buyers": affordabilityImg,
   "sell-home-memories-repairs-clutter-nj": communityImg,
   "sell-home-before-holidays-nj": sellImg,
   "turn-property-into-purpose-holiday": aboutImg,
-  "your-home-our-offer-nj": ownerImg,
+  "your-home-our-offer-nj": sellhomeImg,
   "inherited-property-new-jersey-sell-quickly": affordImg,
   "how-to-get-fair-cash-offer-nj-home": townhomesImg,
   "probate-property-sales-new-jersey": commentImg,
@@ -58,7 +58,7 @@ const imageMap: Record<string, typeof sellImg> = {
   "what-bloomfield-sellers-should-know": condosImg,
   "fair-cash-offer-cedar-grove-house": areaBloomfieldImg,
   "avoid-essex-county-tax-drain-caldwell": heroImg,
-  "cash-house-buyer-belleville-nj-reasons": areaBellevilleImg,
+  "cash-house-buyer-belleville-nj-reasons": affordabilityImg,
   "selling-bloomfield-property-as-is": areaBloomfieldImg,
   "west-milford-real-estate-market-2026": areaImg,
   "cash-home-buyer-jefferson-nj": homesImg,
